@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  redis-rdb:
+    image: redis:7.0.5
+    ports:
+      - "6379:6379"
+    command: redis-server --save 10 1000 --save 1 100 --dbfilename dump.rdb
+    volumes:
+      - redis-rdb-data:/data
+  redis-aof:
+    image: redis:7.0.5
+    ports:
+      - "6380:6379"
+    command: redis-server --appendonly yes --appendfilename "appendonly.aof"
+    volumes:
+      - redis-aof-data:/data
+  beanstalkd:
+    image: uretgec/beanstalkd-alpine:latest
+    ports:
+      - "11300:11300"
+
+volumes:
+  redis-rdb-data:
+  redis-aof-data:

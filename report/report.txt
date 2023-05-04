@@ -1,0 +1,50 @@
+=============================REDIS-RDB==============================
+root - INFO - Test 1000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 1.334977413 seconds
+root - INFO - Total read time: 0.8011130719999997 seconds
+
+root - INFO - Test 5000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 5.771632664 seconds
+root - INFO - Total read time: 4.619280861 seconds
+
+root - INFO - Test 10000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 10.226281056 seconds
+root - INFO - Total read time: 8.013562630000001 seconds
+
+root - INFO - Test 20000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 21.312809005 seconds
+root - INFO - Total read time: 15.732120658000003 seconds
+
+=============================REDIS-AOF==============================
+root - INFO - Test 1000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 1.35310359 seconds
+root - INFO - Total read time: 1.071483148 seconds
+
+root - INFO - Test 5000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 5.953550344 seconds
+root - INFO - Total read time: 5.199770624999999 seconds
+
+root - INFO - Test 10000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 12.042608858 seconds
+root - INFO - Total read time: 9.697134942 seconds
+
+root - INFO - Test 20000 read/write operations with Redis RPUSH/BLPOP
+root - INFO - Total write time: 20.921307786 seconds
+root - INFO - Total read time: 17.905988879 seconds
+
+=============================BEANSTALKD==============================
+root - INFO - Test 1000 read/write operations with Beanstalkd
+root - INFO - Total write time: 1.015051708 seconds
+root - INFO - Total read time: 1.0044878380000002 seconds
+
+root - INFO - Test 5000 read/write operations with Beanstalkd
+root - INFO - Total write time: 5.722466861 seconds
+root - INFO - Total read time: 4.127934622 seconds
+
+root - INFO - Test 10000 read/write operations with Beanstalkd
+root - INFO - Total write time: 10.983164416 seconds
+root - INFO - Total read time: 8.301471437999998 seconds
+
+root - INFO - Test 20000 read/write operations with Beanstalkd
+root - INFO - Total write time: 24.162045587999998 seconds
+root - INFO - Total read time: 18.027309627 seconds
